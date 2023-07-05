@@ -122,14 +122,21 @@ body{
     }
 }
 
+.seprator{
+    height: 1vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0) 100%);
+}
+
 /* PROJECTS */
 
-.projects{
+.projects, .about, .contact{
     display: flex;
     flex-direction: column;
     justify-content: center;  
     /* height: 200vh; */
-    overflow: hidden;
+    /* overflow: hidden; */
+    background: #fff;
 }
 
 h1{
@@ -137,10 +144,10 @@ h1{
     line-height: 90%;
     font-family: 'Montserrat', sans-serif;
     color: var(--tertiary);
-    margin: 0 0 0 5%;
+    margin: 10% 0 0 5%;
 }
 
-.projects-cointainer{
+.projects-cointainer, .about-cointainer{
     margin: 5% auto 0 auto;
     width: 80%;
 }
@@ -243,7 +250,7 @@ h1{
 
 .view-more{
     display: flex;
-    margin: 15vh 0 5vh 0;
+    margin: 15vh 0 0 0;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -276,4 +283,94 @@ h1{
 
 .d-none{
     display: none;
+}
+
+/* ABOUT */
+
+.about{
+    background-color: transparent;
+    height: 100vh;
+}
+
+.about h1, .contact h1{
+    margin: 0 0 0 5%;
+}
+
+.about-cointainer{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.about-img{
+    width: 40%;
+}
+
+.about-img img{
+    width: 90%;
+    margin: auto;
+}
+
+.about-desc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.about-title{
+    font-size: 1.7rem;
+    line-height: 110%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--tertiary);
+}
+
+.about-des{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: normal;
+    margin: 5% 0;
+    color: var(--primary);
+}
+
+/* CONTACT */
+
+.contact{
+    height: 100vh;
+}
+
+.contact-cointainer{
+    margin: 3% auto -3% auto;
+}
+
+.contact-desc form{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.contact-desc input{
+    height: 2rem;
+    margin: 2% 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 2%;
+}
+
+.form-label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: normal;
+    color: var(--primary);
+}
+
+textarea{
+    margin: 2% 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 2%;
+    resize: none;
 }
