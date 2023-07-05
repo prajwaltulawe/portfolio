@@ -374,3 +374,35 @@ textarea{
     padding: 2%;
     resize: none;
 }
+
+.social-logos{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials, .socials-left, .socials-center, .socials-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+}
+
+.socials a{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.socials-center a{
+    display: flex;
+    justify-content: center;
+}
+
+.socials-right a{
+    display: flex;
+    justify-content: end;
+}
+
+.socials img, .socials-center img, .socials-right img, .socials-left img{
+    width: 45%;
+}
