@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
     <link rel="stylesheet" href="css/pattern.css">
     <script defer src="./javascript/script.js"></script>
     <title>Prajwal's Portfolio</title>
@@ -15,7 +16,7 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar sticky">
-        <div class="floating">
+        <div class="floating" onclick="navOpen()">
             <div class="nav-item active"> <a href="#main-sec" id="home" onclick="setActive(this)"> HOME</a></div>
             <div class="nav-item"> <a href="#projects" onclick="setActive(this)"> PROJECTS</a></div>
             <div class="nav-item"> <a href="#about" onclick="setActive(this)"> ABOUT</a></div>
@@ -58,7 +59,7 @@
                     </div>
                     <div class="project-des">
                         <span>
-                            The intuitive career system uses student responses to a set of questions. It leverages existing student data to map personal interests to careers and uses machine learning algorithms to process new inputs and provide results based on prior data analysis.
+                            The intuitive career system uses student responses to a set of questions, leveraging existing data to map personal interests to careers and utilizing machine learning algorithms for result based on prior data analysis 
                         </span>
                     </div>
                     <div class="tech-stack">
@@ -100,7 +101,7 @@
                     </div>
                     <div class="project-des">
                         <span>
-                            CropBid is an online web based application, developed to reduce the exploitation of farmer by allowing them to receive best price quotation for their harvest by connecting them globally through our platform. It is inspired on the concept of betting but in the favor of farmer to maximize profit.
+                            CropBid is an online web based application, developed to reduce the exploitation of farmer by allowing them to receive best price quotation for their harvest by connecting them globally through our platform.
                         </span>
                     </div>
                     <div class="tech-stack">
@@ -176,27 +177,6 @@
                 </div>
             </div>
 
-            <div class="project left-aligned d-none">
-                <div class="project-description">
-                    <div class="project-title">
-                        <span> Complaint Management System</span>
-                        <a href="https://github.com/prajwaltulawe/complaint-management-system-in-php" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des">
-                        <span>
-                            This project is a basic CURD operational application /function made with HTML, CSS, JavaScript, PHP and Bootstrap which helps to manage user's complaints in an organized manner.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, JQuery, PHP, SQL </h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img">
-                    <img src="./images/projects/mediafire.png" alt="" srcset="">
-                </div>
-            </div>
-
         </div>
         <div class="view-more">
             <span class="view-more-button"> <button href="#" onclick="showProjects()"><b> v </b></button></span>
@@ -227,7 +207,7 @@
     <div id="contact" class="contact">
         <h1>Contact.... 👋</h1>
         <div class="about-cointainer contact-cointainer">              
-            <div class="about-desc">
+            <div class="about-desc cont-desc">
                 <div class="about-title">
                     <span>Don't be shy! Hit me up! 👇</span>
                 </div>

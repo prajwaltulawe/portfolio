@@ -133,9 +133,7 @@ body{
 .projects, .about, .contact{
     display: flex;
     flex-direction: column;
-    justify-content: center;  
-    /* height: 200vh; */
-    /* overflow: hidden; */
+    justify-content: center;
     background: #fff;
 }
 
