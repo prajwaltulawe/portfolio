@@ -16,13 +16,25 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar sticky">
-        <div class="floating" onclick="navOpen()">
+        <div class="lines" onclick="showNav()">
+            <div class="span-cointainer cross">
+                <span></span>
+                <span></span> 
+                <span></span>
+            </div>
+            <div class="nav-item d-none active"> <a href="#main-sec" id="home" onclick="setActive(this)"> HOME</a></div>
+            <div class="nav-item d-none"> <a href="#projects" onclick="setActive(this)"> PROJECTS</a></div>
+            <div class="nav-item d-none"> <a href="#about" onclick="setActive(this)"> ABOUT</a></div>
+            <div class="nav-item d-none"> <a href="#contact" onclick="setActive(this)"> CONTACT</a></div>
+            <div class="nav-item d-none"> <a href="#contact" onclick="setActive(this)"> MORE</a></div>
+        </div>
+        <div class="floating">
             <div class="nav-item active"> <a href="#main-sec" id="home" onclick="setActive(this)"> HOME</a></div>
             <div class="nav-item"> <a href="#projects" onclick="setActive(this)"> PROJECTS</a></div>
             <div class="nav-item"> <a href="#about" onclick="setActive(this)"> ABOUT</a></div>
             <div class="nav-item"> <a href="#contact" onclick="setActive(this)"> CONTACT</a></div>
-            <div class="nav-item"> <a href="http://" onclick="setActive(this)"> MORE</a></div>
-        </div>
+            <div class="nav-item"> <a href="#contact" onclick="setActive(this)"> MORE</a></div>
+        </div> 
     </nav>
 
     <!-- MAIN-SECTION -->
@@ -179,24 +191,26 @@
 
         </div>
         <div class="view-more">
-            <span class="view-more-button"> <button href="#" onclick="showProjects()"><b> v </b></button></span>
+            <span class="view-more-button" onclick="showProjects()"> <button href="#"><b> v </b></button></span>
         </div>
     </div>
 
     <!-- ABOUT -->
     <div id="about" class="about">
-        <h1>About Me.... 😁</h1>
         <div class="about-cointainer">
             <div class="about-img">
-                <img src="./images/4884785.jpg" alt="">
+                <img src="./images/about.jpg" alt="">
             </div>
             
             <div class="about-desc">
+                <h1>About Me.... 😁</h1>
                 <div class="about-title">
                     <span>I am Prajwal R. Tulawe, a dedicated web developer with a genuine passion for crafting online experiences.</span>
                 </div>
                 <div class="about-des">
-                    <span>With a strong academic background in Information Technology and a proven track record as a freelancer, I have successfully delivered solutions to clients worldwide. Utilizing a diverse range of web development technologies, I create captivating websites and applications that prioritize useful functionality. My focus is on designing user-friendly interfaces that make a lasting impact. Currently pursuing the Web3 Dev. Bootcamp by Alchemy University and constantly expanding my skill set to stay ahead of the curve in the ever-evolving web development industry.</span>
+                    <span>With a strong academic background in Information Technology and a proven track record as a freelancer, I have successfully delivered solutions to clients worldwide.</span>
+                    <span>Utilizing a diverse range of web development technologies, I create captivating websites and applications that prioritize useful functionality. My focus is on designing user-friendly interfaces that make a lasting impact.</span>
+                    <span>Currently pursuing the Web3 Dev. Bootcamp by Alchemy University and constantly expanding my skill set to stay ahead of the curve in the ever-evolving web development industry.</span>
                 </div>
             </div>
         </div>
@@ -208,7 +222,7 @@
         <h1>Contact.... 👋</h1>
         <div class="about-cointainer contact-cointainer">              
             <div class="about-desc cont-desc">
-                <div class="about-title">
+                <div class="contact-title">
                     <span>Don't be shy! Hit me up! 👇</span>
                 </div>
                 <div class="contact-desc">
@@ -223,24 +237,28 @@
                 </div>
 
                 <div class="socials">
+                    <div></div>
                     <a href="https://www.linkedin.com/in/prajwal-tulawe-06000b213/" target="_blank"> <img src="./images/socials/linkedin.png" alt="" srcset=""></a>
+                    <div></div>
                     <a href="https://github.com/prajwaltulawe" target="_blank"> <img src="./images/socials/github.png" alt="" srcset=""></a>
+                    <div></div>
                     <a href="https://codepen.io/prajwaltulawe" target="_blank"> <img src="./images/socials/codepen.png" alt="" srcset=""></a>
+                    <div></div>                    
                     <a href="https://stackoverflow.com/users/16780620/" target="_blank"> <img src="./images/socials/stackoverflow.png" alt="" srcset=""></a>
+                    <div></div>
                     <a href="https://www.fiverr.com/prajwaltulawe" target="_blank"> <img src="./images/socials/fiverr.png" alt="" srcset=""></a>
-                </div>
-                <div class="social-logos">
-                    <div class="socials-left">
-                        <a href="mailto:tulaveprajwal143@gmail.com" target="_blank"> <img src="./images/socials/mail.png" alt="" srcset=""></a>
-                        <a href="https://t.me/prajwaltulawe" target="_blank"> <img src="./images/socials/telegram.png" alt="" srcset=""></a>
-                    </div>
-                    <div class="socials-center">
-                        <a href="https://www.facebook.com/prajwal.tulave" target="_blank"> <img src="./images/socials/facebook.png" alt="" srcset=""></a>
-                        <a href="https://wa.me/9890686713" target="_blank"> <img src="./images/socials/whatsapp.png" alt="" srcset=""></a>
-                    </div>
-                    <div class="socials-right">
-                        <a href="https://www.instagram.com/prajwaltulawe/" target="_blank"> <img src="./images/socials/instagram.png" alt="" srcset=""></a>
-                        <a href="https://www.snapchat.com/add/prajwaltulawe"  target="_blank"> <img src="./images/socials/snapchat.png" alt="" srcset=""></a>
+                    <div></div>
+                    <a class="small-icon" href="mailto:tulaveprajwal143@gmail.com" target="_blank"> <img src="./images/socials/mail.png" alt="" srcset=""></a>
+                    <div></div>
+                    <a class="small-icon" href="https://t.me/prajwaltulawe" target="_blank"> <img src="./images/socials/telegram.png" alt="" srcset=""></a>
+                    <div></div>
+                    <a class="small-icon" href="https://www.facebook.com/prajwal.tulave" target="_blank"> <img src="./images/socials/facebook.png" alt="" srcset=""></a>
+                    <div></div>
+                    <a class="small-icon" href="https://wa.me/9890686713" target="_blank"> <img src="./images/socials/whatsapp.png" alt="" srcset=""></a>
+                    <div></div>
+                    <a class="small-icon" href="https://www.instagram.com/prajwaltulawe/" target="_blank"> <img src="./images/socials/instagram.png" alt="" srcset=""></a>
+                    <div></div>
+                    <a class="small-icon" href="https://www.snapchat.com/add/prajwaltulawe"  target="_blank"> <img src="./images/socials/snapchat.png" alt="" srcset=""></a>
                     </div>    
                 </div>
             </div>
