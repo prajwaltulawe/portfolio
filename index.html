@@ -6,10 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
     <link rel="stylesheet" href="css/pattern.css">
+    
     <script defer src="./javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <title>Prajwal's Portfolio</title>
 </head>
 
@@ -53,7 +61,7 @@
                 </div>
             </div>
             <div class="profile-img">
-                <img src="./images/profile.jpg" alt="" srcset="">
+                <img src="./images/profile.webp" alt="" srcset="">
             </div>
         </div>
     </div>
@@ -63,7 +71,7 @@
     <div id="projects" class="projects">
         <h1>Projects.... 🧩</h1>
         <div class="projects-cointainer">
-            <div class="project left-aligned">
+            <div class="project left-aligned" id="carrer">
                 <div class="project-description">
                     <div class="project-title">
                         <span>Student Career Suggestion</span>
@@ -80,11 +88,11 @@
                     </div>
                 </div>
                 <div class="project-img">
-                    <img src="./images/projects/carrer.png" alt="" srcset="">
+                    <img src="./images/projects/carrer-img.webp" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="project right-aligned">
+            <div class="project right-aligned" id="mpm">
                 <div class="project-description right-aligned-description">
                     <div class="project-title right-aligned-title">
                         <span>My Personal Manual</span>
@@ -101,11 +109,11 @@
                     </div>
                 </div>
                 <div class="project-img right-aligned-img">
-                    <img src="./images/projects/mypersonalmanual.png" alt="" srcset="">
+                    <img src="./images/projects/mpm-img.webp" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="project left-aligned">
+            <div class="project left-aligned" id="cropbid">
                 <div class="project-description">
                     <div class="project-title">
                         <span>CropBid</span>
@@ -122,11 +130,11 @@
                     </div>
                 </div>
                 <div class="project-img">
-                    <img src="./images/projects/cropbid.png" alt="" srcset="">
+                    <img src="./images/projects/cropbid-img.webp" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="project right-aligned d-none">
+            <div class="project right-aligned d-none" id="quotation">
                 <div class="project-description right-aligned-description">
                     <div class="project-title right-aligned-title">
                         <span>Quotation Generator</span>
@@ -143,11 +151,11 @@
                     </div>
                 </div>
                 <div class="project-img right-aligned-img">
-                    <img src="./images/projects/quotation.jpg" alt="" srcset="">
+                    <img src="./images/projects/quotation-img.webp" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="project left-aligned d-none">
+            <div class="project left-aligned d-none" id="vehicle">
                 <div class="project-description">
                     <div class="project-title">
                         <span> Vehicle Details Scrapper</span>
@@ -164,11 +172,11 @@
                     </div>
                 </div>
                 <div class="project-img">
-                    <img src="./images/projects/mediafire.png" alt="" srcset="">
+                    <img src="./images/projects/vehicle-img.webp" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="project right-aligned d-none">
+            <div class="project right-aligned d-none" id="ecomm">
                 <div class="project-description right-aligned-description">
                     <div class="project-title right-aligned-title">
                         <span>E-Commerce Admin Panel</span>
@@ -185,11 +193,11 @@
                     </div>
                 </div>
                 <div class="project-img right-aligned-img">
-                    <img src="./images/projects/quotation.jpg" alt="" srcset="">
+                    <img src="./images/projects/ecomm-img.webp" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="project left-aligned d-none">
+            <div class="project left-aligned d-none" id="mediafire">
                 <div class="project-description">
                     <div class="project-title">
                         <span> Mediafire Bot</span>
@@ -206,11 +214,11 @@
                     </div>
                 </div>
                 <div class="project-img">
-                    <img src="./images/projects/mediafire.png" alt="" srcset="">
+                    <img src="./images/projects/mediafire-img.webp" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="project right-aligned d-none">
+            <div class="project right-aligned d-none" id="chatapp">
                 <div class="project-description right-aligned-description">
                     <div class="project-title right-aligned-title">
                         <span> Chat Application</span>
@@ -227,11 +235,11 @@
                     </div>
                 </div>
                 <div class="project-img right-aligned-img">
-                    <img src="./images/projects/quotation.jpg" alt="" srcset="">
+                    <img src="./images/projects/chatapp-img.webp" alt="" srcset="">
                 </div>
             </div>
 
-            <div class="project left-aligned d-none">
+            <div class="project left-aligned d-none" id="cms">
                 <div class="project-description">
                     <div class="project-title">
                         <span> Complaint Management System</span>
@@ -248,7 +256,7 @@
                     </div>
                 </div>
                 <div class="project-img">
-                    <img src="./images/projects/mediafire.png" alt="" srcset="">
+                    <img src="./images/projects/cms-img.webp" alt="" srcset="">
                 </div>
             </div>
 
@@ -262,7 +270,7 @@
     <div id="about" class="about">
         <div class="about-cointainer">
             <div class="about-img">
-                <img src="./images/about.jpg" alt="">
+                <img src="./images/about.webp" alt="">
             </div>
             
             <div class="about-desc">
