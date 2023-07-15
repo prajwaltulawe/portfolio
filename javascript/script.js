@@ -40,7 +40,7 @@ function setActive(ref) {
 }
 
 $(document).ready(function () {
-    $("div.project").hover(
+  $("div.project").hover(
     function () {
       var projectGif = {  
         carrer: "./images/projects/carrer-gif.webp",
@@ -68,7 +68,35 @@ $(document).ready(function () {
         chatapp: "./images/projects/chatapp-img.webp"
       }
       this.childNodes[3].childNodes[1].src = projectImg[this.id];
-      // this.childNodes[3].childNodes[1].src = this.childNodes[3].childNodes[1].src.replace("gif", "img");
     }
   );
+
+  $("div.project").on("pointerdown", function(event) {
+    
+    $("div.project-img").each(function(){
+      this.childNodes[1].src = this.childNodes[1].src.replace(new RegExp("\\b" + "gif" + "\\b"), 
+      function(match, index) {
+        console.log(match, index)
+        if(index === 0){
+          return "img";
+        }
+      }); 
+    });
+    
+    var projectGif = {  
+      carrer: "./images/projects/carrer-gif.webp",
+      mpm: "./images/projects/mpm-gif.webp",
+      cropbid: "./images/projects/cropbid-gif.webp",
+      mediafire: "./images/projects/mediafire-gif.webp",
+      cms: "./images/projects/cms-gif.webp",
+      ecomm: "./images/projects/ecomm-gif.gif",
+      quotation: "./images/projects/quotation-gif.gif",
+      vehicle: "./images/projects/vehicle-gif.gif",
+      chatapp: "./images/projects/chatapp-gif.gif"
+    }
+    this.childNodes[3].childNodes[1].src = projectGif[this.id];
+    event.preventDefault();
+  });
+
 });
+

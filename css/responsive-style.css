@@ -1184,7 +1184,7 @@
     .project-title a{
         font-size: .8rem;
         padding: .7rem 2rem;
-        margin: 5% 0;
+        margin: 5% 0 2% 0;
         border-radius: 0 1rem 1rem 0;
     }
     .right-aligned{
@@ -1214,7 +1214,8 @@
     }
     .project-des{
         width: 100%;
-        font-size: .85rem;
+        font-weight: 400;
+        font-size: .7rem;
         margin: 0;
     }
     .tech-stack{

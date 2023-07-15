@@ -375,7 +375,7 @@ h1{
 .contact-desc form{
     display: flex;
     flex-direction: column;
-    margin: 5% 0;
+    margin: 3% 0 3% 0;
     text-align: start;
 }
 
@@ -401,11 +401,19 @@ textarea{
     resize: none;
 }
 
+.contact-desc button{
+    background: var(--secondary);
+    border: none;
+    color: #fff;
+    padding: 1%;
+    margin: 1% 0;
+}
+
 .socials{
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: auto auto;
-    grid-row-gap: 5%;
+    grid-row-gap: 1%;
 }
 .socials a{
     width: 100%;
