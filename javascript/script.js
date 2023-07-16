@@ -39,6 +39,10 @@ function setActive(ref) {
   ref.parentElement.setAttribute("class", `nav-item active`);
 }
 
+function closeModal(){
+  document.getElementsByClassName("modal-cointainer")[0].style.display = "none";
+}
+
 $(document).ready(function () {
   $("div.project").hover(
     function () {
@@ -73,14 +77,11 @@ $(document).ready(function () {
 
   $("div.project").on("pointerdown", function(event) {
     
-    $("div.project-img").each(function(){
-      this.childNodes[1].src = this.childNodes[1].src.replace(new RegExp("\\b" + "gif" + "\\b"), 
-      function(match, index) {
-        console.log(match, index)
-        if(index === 0){
-          return "img";
-        }
-      }); 
+    $("div.project-img").each(function(){       
+      if (this.childNodes[1].src.indexOf("gif") != -1) {
+        var gifWord = this.childNodes[1].src.indexOf("gif");
+        this.childNodes[1].src = this.childNodes[1].src.substr(0, gifWord) + "img.webp"
+      }
     });
     
     var projectGif = {  
@@ -94,9 +95,24 @@ $(document).ready(function () {
       vehicle: "./images/projects/vehicle-gif.gif",
       chatapp: "./images/projects/chatapp-gif.gif"
     }
-    this.childNodes[3].childNodes[1].src = projectGif[this.id];
-    event.preventDefault();
+    
+    if (this.childNodes[3].childNodes[1].src.indexOf("gif") == -1) {
+      this.childNodes[3].childNodes[1].src = projectGif[this.id];
+      event.preventDefault();
+    }
   });
 
+  $('#form').submit(function(e){
+    e.preventDefault();
+    var formData = $(this).serialize();
+    $.post('http://apis.mywebcommunity.org/portfolio/sendMessages.php', formData, 
+    function(response){
+        setTimeout(() => {
+          document.getElementsByClassName("modal-cointainer")[0].style.display = "none";
+        }, response['timer']);
+        document.getElementsByClassName("modal-cointainer")[0].style.display = "flex";
+        document.getElementById("contact-Msg").innerHTML = response['msg'];
+    });
+  });
 });
 

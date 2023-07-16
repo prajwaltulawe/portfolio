@@ -1129,6 +1129,9 @@
         display: none;
     }
 
+    .main-sec{
+        height: 100svh;
+    }
     .intro-section{
         width: 100%;
         display: flex;
@@ -1276,4 +1279,20 @@
     .cont-desc{
         width: 95%;
     }  
+
+    .msg-modal span{
+        font-size: 1.5rem;
+    }
+    
+    .msg-modal hr{
+        opacity: 0;
+        margin: 5% 0 0 0;
+    }
+    
+    .modal-btn{
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        padding: 1% 4%;
+        margin: 10%;
+    }
 }

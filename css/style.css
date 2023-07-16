@@ -409,6 +409,10 @@ textarea{
     margin: 1% 0;
 }
 
+.contact-desc button:hover{
+    cursor: pointer;
+}
+
 .socials{
     display: grid;
     grid-template-columns: repeat(11, 1fr);
@@ -424,4 +428,61 @@ textarea{
 
 .small-icon img{
     width: 80% !important;
+}
+
+/* MODAL */
+.modal-cointainer{
+    display: none;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.msg-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 50%;
+    border-radius: 1rem;
+}
+
+.msg-modal span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--tertiary);
+}
+
+.msg-modal hr{
+    opacity: 0;
+    margin: 5% 0 0 0;
+}
+
+.modal-btn{
+    border: none;
+    background-color: var(--secondary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    margin: 2%;
+    color: var(--white);
+    padding: 1% 4%;
+}
+
+.modal-btn:hover{
+    cursor: pointer;
 }
