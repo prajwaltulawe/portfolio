@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /server/
+Disallow: /css/
+Disallow: /javascript/
+
+Sitemap: https://portfolio-prajwaltulawe.vercel.app/sitemap.xml
