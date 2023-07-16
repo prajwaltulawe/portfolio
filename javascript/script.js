@@ -103,6 +103,10 @@ $(document).ready(function () {
   });
 
   $('#form').submit(function(e){
+    
+    document.getElementsByClassName("modal-cointainer")[0].style.display = "flex";
+    document.getElementById("contact-Msg").innerHTML = `<span>Your message wasn't sent. &#128566;<hr> Can you try other options below!</span><button class="modal-btn" onClick="closeModal()">SURE</button>`;
+
     e.preventDefault();
     var formData = $(this).serialize();
     $.post('http://apis.mywebcommunity.org/portfolio/sendMessages.php', formData, 
