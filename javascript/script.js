@@ -167,7 +167,6 @@
 
     // Append the complete projectDiv to the parentElement
     projectCointainer.appendChild(projectDiv);
-    console.log(projects[i].projectName);
 
     if (projects[i + 1]) {
       // Create the main div with class 'project'
@@ -245,7 +244,6 @@
 
       // Append the complete projectDiv to the parentElement
       projectCointainer.appendChild(projectDiv);
-      console.log(projects[i + 1].projectName);
     }
     i++;
   }
