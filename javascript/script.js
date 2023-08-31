@@ -402,11 +402,13 @@ $(document).ready(function () {
   // RECIVE MESSAGES
   $("#form").submit(function (e) {
     e.preventDefault();
+    document.getElementsByClassName("modal-cointainer")[0].style.display ="flex";
+    document.getElementById("contact-Msg").innerHTML = `<span>Hold on. &#128400;</span>`;
     var formData = $(this).serialize();
     $.post("https://portfolio-backend-u37l.onrender.com/addMessage", formData, function (response) {
       if (response.success === true) {
         document.getElementsByClassName("modal-cointainer")[0].style.display ="flex";
-        document.getElementById("contact-Msg").innerHTML = `<span>We'll connect soon. &#128578;</span><button class="modal-btn" onClick="closeModal()">YUPPP!</button>`;
+        document.getElementById("contact-Msg").innerHTML = `<span>Received your message! <br> We'll connect soon. &#128578;</span><button class="modal-btn" onClick="closeModal()">YUPPP!</button>`;
       } else {
         document.getElementsByClassName("modal-cointainer")[0].style.display = "flex";
         document.getElementById("contact-Msg").innerHTML = `<span>Your message wasn't sent. &#128566;<hr> You can try other options below!</span><button class="modal-btn" onClick="closeModal()">SURE</button>`;
