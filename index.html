@@ -51,18 +51,18 @@
                 <span></span> 
                 <span></span>
             </div>
-            <div class="nav-item d-none active"> <a href="#main-sec" id="home" onclick="setActive(this)"> HOME</a></div>
-            <div class="nav-item d-none"> <a href="#projects" onclick="setActive(this)"> PROJECTS</a></div>
-            <div class="nav-item d-none"> <a href="#about" onclick="setActive(this)"> ABOUT</a></div>
-            <div class="nav-item d-none"> <a href="#contact" onclick="setActive(this)"> CONTACT</a></div>
-            <div class="nav-item d-none"> <a href="#contact" onclick="setActive(this)"> MORE</a></div>
+            <div class="nav-item d-none active"> <a href="#main-sec" id="home" data-navItem-main-sec="nav-main-sec" onclick="setActive(this)"> HOME</a></div>
+            <div class="nav-item d-none"> <a href="#projects" data-navItem-projects="nav-projects" onclick="setActive(this)"> PROJECTS</a></div>
+            <div class="nav-item d-none"> <a href="#about" data-navItem-about="nav-about" onclick="setActive(this)"> ABOUT</a></div>
+            <div class="nav-item d-none"> <a href="#contact" data-navItem-contact="nav-contact" onclick="setActive(this)"> CONTACT</a></div>
+            <div class="nav-item d-none"> <a href="#socials" data-navItem-socials="nav-socials" onclick="setActive(this)"> MORE</a></div>
         </div>
         <div class="floating">
-            <div class="nav-item active"> <a href="#main-sec" id="home" onclick="setActive(this)"> HOME</a></div>
-            <div class="nav-item"> <a href="#projects" onclick="setActive(this)"> PROJECTS</a></div>
-            <div class="nav-item"> <a href="#about" onclick="setActive(this)"> ABOUT</a></div>
-            <div class="nav-item"> <a href="#contact" onclick="setActive(this)"> CONTACT</a></div>
-            <div class="nav-item"> <a href="#contact" onclick="setActive(this)"> MORE</a></div>
+            <div class="nav-item active"> <a href="#main-sec" data-navItem-main-sec="nav-main-sec" id="home" onclick="setActive(this)"> HOME</a></div>
+            <div class="nav-item"> <a href="#projects" data-navItem-projects="nav-projects" onclick="setActive(this)"> PROJECTS</a></div>
+            <div class="nav-item"> <a href="#about" data-navItem-about="nav-about" onclick="setActive(this)"> ABOUT</a></div>
+            <div class="nav-item"> <a href="#contact" data-navItem-contact="nav-contact" onclick="setActive(this)"> CONTACT</a></div>
+            <div class="nav-item"> <a href="#socials" data-navItem-socials="nav-socials" onclick="setActive(this)"> MORE</a></div>
         </div> 
     </nav>
 
@@ -92,195 +92,6 @@
     <div id="projects" class="projects">
         <h1>Projects.... 🧩</h1>
         <div class="projects-cointainer">
-            <div class="project left-aligned" id="carrer">
-                <div class="project-description">
-                    <div class="project-title">
-                        <span>Student Career Suggestion</span>
-                        <a href="http://carrersuggestion.42web.io/" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des">
-                        <span>
-                            The intuitive career system uses student responses to a set of questions, leveraging existing data to map personal interests to careers and utilizing machine learning algorithms for result based on prior data analysis 
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, Bootstrap, Python ( flask ), PHP </h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img">
-                    <img src="./images/projects/carrer-img.webp" alt="carrer-img srcset="">
-                </div>
-            </div>
-
-            <div class="project right-aligned" id="mpm">
-                <div class="project-description right-aligned-description">
-                    <div class="project-title right-aligned-title">
-                        <span>My Personal Manual</span>
-                        <a href="https://mypersonalmanual.com/" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des right-aligned-des">
-                        <span>
-                            This application features questionnaires for students and job market beginners. It generates downloadable PDF reports of the questionnaire results for easy communication and analysis of user psychology in a specific region from data collected.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, JQuery, Bootstrap, PHP, SQL </h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img right-aligned-img">
-                    <img src="./images/projects/mpm-img.webp" alt="mpm-img" srcset="">
-                </div>
-            </div>
-
-            <div class="project left-aligned" id="cropbid">
-                <div class="project-description">
-                    <div class="project-title">
-                        <span>CropBid</span>
-                        <a href="http://cropbid.42web.io/" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des">
-                        <span>
-                            CropBid is an online web based application, developed to reduce the exploitation of farmer by allowing them to receive best price quotation for their harvest by connecting them globally through our platform.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, JQuery, Bootstrap, PHP, SQL </h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img">
-                    <img src="./images/projects/cropbid-img.webp" alt="cropbid-img" srcset="">
-                </div>
-            </div>
-
-            <div class="project right-aligned d-none" id="quotation">
-                <div class="project-description right-aligned-description">
-                    <div class="project-title right-aligned-title">
-                        <span>Quotation Generator</span>
-                        <a href="https://prajwaltulawe.github.io/quotationGenerator/" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des right-aligned-des">
-                        <span>
-                            Quotation Generator is a free online web tool for creating quotations in PDF format, currently used by small and medium scale enterprises, freelancers and service providers for providing quotations to their clients and personally designed one for a medium scale service provider for his daily business.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, JQuery</h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img right-aligned-img">
-                    <img src="./images/projects/quotation-img.webp" alt="quotation-img" srcset="">
-                </div>
-            </div>
-
-            <div class="project left-aligned d-none" id="vehicle">
-                <div class="project-description">
-                    <div class="project-title">
-                        <span> Vehicle Details Scrapper</span>
-                        <a href="https://github.com/prajwaltulawe/vehicleDetailsScrapper" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des">
-                        <span>
-                            This project automates the process of extracting vehicle information from the official government website. By leveraging web scraping techniques, this application efficiently gathers relevant details of vehicles, providing users with a convenient way to access the data.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, JQuery, Node.js, Puppeter </h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img">
-                    <img src="./images/projects/vehicle-img.webp" alt="vehicle-img" srcset="">
-                </div>
-            </div>
-
-            <div class="project right-aligned d-none" id="ecomm">
-                <div class="project-description right-aligned-description">
-                    <div class="project-title right-aligned-title">
-                        <span>E-Commerce Admin Panel</span>
-                        <a href="http://eeommerce-adminpanel.000.pe/admin/" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des right-aligned-des">
-                        <span>
-                            E-commerce admin panel is a powerful web app built on Laravel (PHP), empowering admins with robust eCommerce functionalities. Manage products, orders, and inventory effortlessly, with the MVC architecture, ensuring seamless performance and scalability of online store.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, Bootstrap, Laravel ( php ), Sql</h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img right-aligned-img">
-                    <img src="./images/projects/ecomm-img.webp" alt="ecomm-img" srcset="">
-                </div>
-            </div>
-
-            <div class="project left-aligned d-none" id="mediafire">
-                <div class="project-description">
-                    <div class="project-title">
-                        <span> Mediafire Bot</span>
-                        <a href="https://github.com/prajwaltulawe/mediafireBot" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des">
-                        <span>
-                            Mediafire is an online cloud service provider in which if a regular user needs to download all files from a folder, they needs to face several popups and continue a looping process. This bot is made to escape from this situation as it automates the process.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, JQuery, Node.js, Puppeter </h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img">
-                    <img src="./images/projects/mediafire-img.webp" alt="mediafire-img" srcset="">
-                </div>
-            </div>
-
-            <div class="project right-aligned d-none" id="chatapp">
-                <div class="project-description right-aligned-description">
-                    <div class="project-title right-aligned-title">
-                        <span> Chat Application</span>
-                        <a href="https://group-private-chat-application.glitch.me/" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des right-aligned-des">
-                        <span>
-                            Chat application is a user-friendly, real-time communication platform for individuals. It allows users to exchange messages and engage in group conversation. With its simple interface and easy connectivity, the application enables instant and convenient communication across various devices.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, Node.js, Socket.io</h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img right-aligned-img">
-                    <img src="./images/projects/chatapp-img.webp" alt="chatapp-img srcset="">
-                </div>
-            </div>
-
-            <div class="project left-aligned d-none" id="cms">
-                <div class="project-description">
-                    <div class="project-title">
-                        <span> Complaint Management System</span>
-                        <a href="http://myprojects.000.pe/complaintManagementSystem/complaintregistrartion.php" target="_blank" class="view-project"> View Project</a>
-                    </div>
-                    <div class="project-des">
-                        <span>
-                            It is a platform for efficient complaint handling. Users can easily submit complaints, while administrators manage and update records with ease and provides solution to user thorugh mentioned contact details.
-                        </span>
-                    </div>
-                    <div class="tech-stack">
-                        <span><strong> <h4> Tech Stack Used : </h4></strong></span>
-                        <span><strong> <h4> HTML, CSS, JavaScript, JQuery, Node.js, Puppeter </h4></strong></span>
-                    </div>
-                </div>
-                <div class="project-img">
-                    <img src="./images/projects/cms-img.webp" alt="cms-img" srcset="">
-                </div>
-            </div>
-
         </div>
         <div class="view-more">
             <span class="view-more-button" onclick="showProjects()"> <button href="#"><b> v </b></button></span>
@@ -329,7 +140,7 @@
                     </form>
                 </div>
 
-                <div class="socials">
+                <div class="socials" id="socials">
                     <div></div>
                     <a href="https://www.linkedin.com/in/prajwal-tulawe-06000b213/" target="_blank"> <img src="./images/socials/linkedin.png" alt="linkedin" srcset=""></a>
                     <div></div>
