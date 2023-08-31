@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#auth").submit(function (e) {
       e.preventDefault(); // Prevent default form submission
       var formData = $(this).serialize();
-      $.post("http://localhost:5000/dashboard", formData, function (response) {
+      $.post("https://portfolio-backend-u37l.onrender.com/dashboard", formData, function (response) {
           if (response.success === true) {
             document.getElementById("auth").style.display = "none";
             document.getElementById("myTable").className = "flex";

@@ -403,7 +403,7 @@ $(document).ready(function () {
   $("#form").submit(function (e) {
     e.preventDefault();
     var formData = $(this).serialize();
-    $.post("http://localhost:5000/addMessage", formData, function (response) {
+    $.post("https://portfolio-backend-u37l.onrender.com/addMessage", formData, function (response) {
       if (response.success === true) {
         document.getElementsByClassName("modal-cointainer")[0].style.display ="flex";
         document.getElementById("contact-Msg").innerHTML = `<span>We'll connect soon. &#128578;</span><button class="modal-btn" onClick="closeModal()">YUPPP!</button>`;
