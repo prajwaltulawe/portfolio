@@ -253,7 +253,6 @@
 const sections = ["main-sec", "projects", "about", "contact", "socials"];
 let currentSectionIndex = 0;
 let isScrolling = false;
-
 function setActiveSection(index) {
   const activeSection = document.getElementById(sections[index]);
   activeSection.scrollIntoView({ behavior: "smooth" });
@@ -339,8 +338,13 @@ function closeModal() {
   document.getElementsByClassName("modal-cointainer")[0].style.display = "none";
 }
 
-// RUN ANIMATION OF IMAGES
 $(document).ready(function () {
+  
+  // START SERVER
+  $.get("https://portfolio-backend-u37l.onrender.com/");
+  setInterval(() => $.get("https://portfolio-backend-u37l.onrender.com/"), 450000);
+  
+  // RUN ANIMATION OF IMAGES
   $("div.project").hover(
     function () {
       var projectGif = {
@@ -371,7 +375,6 @@ $(document).ready(function () {
       this.childNodes[1].childNodes[0].src = projectImg[this.id];
     }
   );
-
   $("div.project").on("pointerdown", function (event) {
     $("div.project-img").each(function () {
       if (this.childNodes[1].src.indexOf("gif") != -1) {
