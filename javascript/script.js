@@ -1,99 +1,6 @@
-(function populateProjects() {
-  const projects = [
-    {
-      id: "carrer",
-      projectName: "Student Career Suggestion",
-      link: "http://carrersuggestion.42web.io/",
-      description:
-        "The intuitive career system uses student responses to a set of questions, leveraging existing data to map personal interests to careers and utilizing machine learning algorithms for result based on prior data analysis",
-      techStack: " HTML, CSS, JavaScript, Bootstrap, Python ( flask ), PHP",
-      imageSrc: "./images/projects/carrer-img.webp",
-      imgAlt: "carrer-img",
-    },
-    {
-      id: "mpm",
-      projectName: "My Personal Manual",
-      link: "https://mypersonalmanual.com/",
-      description:
-        "This application features questionnaires for students and job market beginners. It generates downloadable PDF reports of the questionnaire results for easy communication and analysis of user psychology in a specific region from data collected.",
-      techStack: " HTML, CSS, JavaScript, JQuery, Bootstrap, PHP, SQL",
-      imageSrc: "./images/projects/mpm-img.webp",
-      imgAlt: "mpm-img",
-    },
-    {
-      id: "cropbid",
-      projectName: "CropBid",
-      link: "http://cropbid.42web.io/",
-      description:
-        "CropBid is an online web based application, developed to reduce the exploitation of farmer by allowing them to receive best price quotation for their harvest by connecting them globally through our platform.",
-      techStack: " HTML, CSS, JavaScript, JQuery, Bootstrap, PHP, SQL",
-      imageSrc: "./images/projects/cropbid-img.webp",
-      imgAlt: "cropbid-img",
-    },
-    {
-      id: "quotation",
-      projectName: "Quotation Generator",
-      link: "https://prajwaltulawe.github.io/quotationGenerator/",
-      description:
-        "Quotation Generator is a free online web tool for creating quotations in PDF format, currently used by small and medium scale enterprises, freelancers and service providers for providing quotations to their clients and personally designed one for a medium scale service provider for his daily business.",
-      techStack: " HTML, CSS, JavaScript, JQuery",
-      imageSrc: "./images/projects/quotation-img.webp",
-      imgAlt: "quotation-img",
-    },
-    {
-      id: "vehicle",
-      projectName: "Vehicle Details Scrapper",
-      link: "https://github.com/prajwaltulawe/vehicleDetailsScrapper",
-      description:
-        "This project automates the process of extracting vehicle information from the official government website. By leveraging web scraping techniques, this application efficiently gathers relevant details of vehicles, providing users with a convenient way to access the data.",
-      techStack: " HTML, CSS, JavaScript, JQuery, Node.js, Puppeter",
-      imageSrc: "./images/projects/vehicle-img.webp",
-      imgAlt: "vehicle-img",
-    },
-    {
-      id: "ecomm",
-      projectName: "E-Commerce Admin Panel",
-      link: "http://eeommerce-adminpanel.000.pe/admin/",
-      description:
-        "E-commerce admin panel is a powerful web app built on Laravel (PHP), empowering admins with robust eCommerce functionalities. Manage products, orders, and inventory effortlessly, with the MVC architecture, ensuring seamless performance and scalability of online store.",
-      techStack: " HTML, CSS, JavaScript, Bootstrap, Laravel ( php ), Sql",
-      imageSrc: "./images/projects/ecomm-img.webp",
-      imgAlt: "ecomm-img",
-    },
-    {
-      id: "mediafire",
-      projectName: "Mediafire Bot",
-      link: "https://github.com/prajwaltulawe/mediafireBot",
-      description:
-        "Mediafire is an online cloud service provider in which if a regular user needs to download all files from a folder, they needs to face several popups and continue a looping process. This bot is made to escape from this situation as it automates the process.",
-      techStack: " HTML, CSS, JavaScript, JQuery, Node.js, Puppeter",
-      imageSrc: "./images/projects/mediafire-img.webp",
-      imgAlt: "mediafire-img",
-    },
-    {
-      id: "chatapp",
-      projectName: "Chat Application",
-      link: "https://group-private-chat-application.glitch.me/",
-      description:
-        "Chat application is a user-friendly, real-time communication platform for individuals. It allows users to exchange messages and engage in group conversation. With its simple interface and easy connectivity, the application enables instant and convenient communication across various devices.",
-      techStack: " HTML, CSS, JavaScript, Node.js, Socket.io",
-      imageSrc: "./images/projects/chatapp-img.webp",
-      imgAlt: "chatapp-img",
-    },
-    {
-      id: "cms",
-      projectName: "Complaint Management System",
-      link: "http://myprojects.000.pe/complaintManagementSystem/complaintregistrartion.php",
-      description:
-        "It is a platform for efficient complaint handling. Users can easily submit complaints, while administrators manage and update records with ease and provides solution to user thorugh mentioned contact details.",
-      techStack: " HTML, CSS, JavaScript, JQuery, Node.js, Puppeter",
-      imageSrc: "./images/projects/cms-img.webp",
-      imgAlt: "cms-img",
-    },
-  ];
-  let projectCointainer = document.getElementsByClassName(
-    "projects-cointainer"
-  )[0];
+// POPULATE PROJECTS DYNAMICALLY
+function setProjects (projects) {
+  let projectCointainer = document.getElementsByClassName("projects-cointainer")[0];
   for (let i = 0; i < projects.length; i++) {
     // Create the main div with class 'project'
     const projectDiv = document.createElement("div");
@@ -247,6 +154,101 @@
     }
     i++;
   }
+  
+}
+(function populateProjects() {
+  const projects = [
+    { id: "carrer",
+      projectName: "Student Career Suggestion",
+      link: "http://carrersuggestion.42web.io/",
+      description:
+        "The intuitive career system uses student responses to a set of questions, leveraging existing data to map personal interests to careers and utilizing machine learning algorithms for result based on prior data analysis",
+      techStack: " HTML, CSS, JavaScript, Bootstrap, Python ( flask ), PHP",
+      imageSrc: "./images/projects/carrer-img.webp",
+      imgAlt: "carrer-img",
+    },
+    { id: "mpm",
+      projectName: "My Personal Manual",
+      link: "https://mypersonalmanual.com/",
+      description:
+        "This application features questionnaires for students and job market beginners. It generates downloadable PDF reports of the questionnaire results for easy communication and analysis of user psychology in a specific region from data collected.",
+      techStack: " HTML, CSS, JavaScript, JQuery, Bootstrap, PHP, SQL",
+      imageSrc: "./images/projects/mpm-img.webp",
+      imgAlt: "mpm-img",
+    },
+    { id: "cropbid",
+      projectName: "CropBid",
+      link: "http://cropbid.42web.io/",
+      description:
+        "CropBid is an online web based application, developed to reduce the exploitation of farmer by allowing them to receive best price quotation for their harvest by connecting them globally through our platform.",
+      techStack: " HTML, CSS, JavaScript, JQuery, Bootstrap, PHP, SQL",
+      imageSrc: "./images/projects/cropbid-img.webp",
+      imgAlt: "cropbid-img",
+    },
+    { id: "quotation",
+      projectName: "Quotation Generator",
+      link: "https://prajwaltulawe.github.io/quotationGenerator/",
+      description:
+        "Quotation Generator is a free online web tool for creating quotations in PDF format, currently used by small and medium scale enterprises, freelancers and service providers for providing quotations to their clients and personally designed one for a medium scale service provider for his daily business.",
+      techStack: " HTML, CSS, JavaScript, JQuery",
+      imageSrc: "./images/projects/quotation-img.webp",
+      imgAlt: "quotation-img",
+    },
+    { id: "vehicle",
+      projectName: "Vehicle Details Scrapper",
+      link: "https://github.com/prajwaltulawe/vehicleDetailsScrapper",
+      description:
+        "This project automates the process of extracting vehicle information from the official government website. By leveraging web scraping techniques, this application efficiently gathers relevant details of vehicles, providing users with a convenient way to access the data.",
+      techStack: " HTML, CSS, JavaScript, JQuery, Node.js, Puppeter",
+      imageSrc: "./images/projects/vehicle-img.webp",
+      imgAlt: "vehicle-img",
+    },
+    { id: "pi2it2",
+      projectName: "PI2IT2",
+      link: "https://pi2it2.netlify.app/",
+      description: "Pi2it2 is an online web application specifically designed for students of I2IT to share assignment link of specific practices that can be used as reference by other students. It has a like and dislike function to rank best assignments.",
+      techStack: " MongoDB, Express.js, React.js, Node.js, Bootstrap",
+      imageSrc: "./images/projects/pi2it2-img.webp",
+      imgAlt: "pi2it2-img",
+    },
+    { id: "ecomm",
+      projectName: "E-Commerce Admin Panel",
+      link: "http://eeommerce-adminpanel.000.pe/admin/",
+      description:
+        "E-commerce admin panel is a powerful web app built on Laravel (PHP), empowering admins with robust eCommerce functionalities. Manage products, orders, and inventory effortlessly, with the MVC architecture, ensuring seamless performance and scalability of online store.",
+      techStack: " HTML, CSS, JavaScript, Bootstrap, Laravel ( php ), Sql",
+      imageSrc: "./images/projects/ecomm-img.webp",
+      imgAlt: "ecomm-img",
+    },
+    { id: "mediafire",
+      projectName: "Mediafire Bot",
+      link: "https://github.com/prajwaltulawe/mediafireBot",
+      description:
+        "Mediafire is an online cloud service provider in which if a regular user needs to download all files from a folder, they needs to face several popups and continue a looping process. This bot is made to escape from this situation as it automates the process.",
+      techStack: " HTML, CSS, JavaScript, JQuery, Node.js, Puppeter",
+      imageSrc: "./images/projects/mediafire-img.webp",
+      imgAlt: "mediafire-img",
+    },
+    { id: "chatapp",
+      projectName: "Chat Application",
+      link: "https://group-private-chat-application.glitch.me/",
+      description:
+        "Chat application is a user-friendly, real-time communication platform for individuals. It allows users to exchange messages and engage in group conversation. With its simple interface and easy connectivity, the application enables instant and convenient communication across various devices.",
+      techStack: " HTML, CSS, JavaScript, Node.js, Socket.io",
+      imageSrc: "./images/projects/chatapp-img.webp",
+      imgAlt: "chatapp-img",
+    },
+    { id: "cms",
+      projectName: "Complaint Management System",
+      link: "http://myprojects.000.pe/complaintManagementSystem/complaintregistrartion.php",
+      description:
+        "It is a platform for efficient complaint handling. Users can easily submit complaints, while administrators manage and update records with ease and provides solution to user thorugh mentioned contact details.",
+      techStack: " HTML, CSS, JavaScript, JQuery, Node.js, Puppeter",
+      imageSrc: "./images/projects/cms-img.webp",
+      imgAlt: "cms-img",
+    },
+  ];
+  setProjects (projects)
 })();
 
 // NEW SECTION ON SCROLL
@@ -353,6 +355,7 @@ $(document).ready(function () {
         cropbid: "./images/projects/cropbid-gif.webp",
         mediafire: "./images/projects/mediafire-gif.webp",
         cms: "./images/projects/cms-gif.webp",
+        pi2it2: "./images/projects/pi2it2-gif.webp",
         ecomm: "./images/projects/ecomm-gif.gif",
         quotation: "./images/projects/quotation-gif.gif",
         vehicle: "./images/projects/vehicle-gif.gif",
@@ -368,6 +371,7 @@ $(document).ready(function () {
         ecomm: "./images/projects/ecomm-img.webp",
         mediafire: "./images/projects/mediafire-img.webp",
         cms: "./images/projects/cms-img.webp",
+        pi2it2: "./images/projects/pi2it2-img.webp",
         quotation: "./images/projects/quotation-img.webp",
         vehicle: "./images/projects/vehicle-img.webp",
         chatapp: "./images/projects/chatapp-img.webp",
