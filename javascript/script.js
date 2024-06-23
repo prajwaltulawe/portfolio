@@ -167,6 +167,15 @@ function setProjects (projects) {
       imageSrc: "./images/projects/carrer-img.webp",
       imgAlt: "carrer-img",
     },
+    { id: "organDonation",
+      projectName: "ML Organ Match System",
+      link: "https://organproject.onrender.com/",
+      description:
+        "ML Powered Organ Donation System improves the efficiency and accuracy of matching kidney donors with recipients. It enhances the transplant success rates and patient compatibility with donors.",
+      techStack: " Node.js, Express.js, Ejs, MongoDB, Bootstrap, Python ( flask )",
+      imageSrc: "./images/projects/organDonation-img.webp",
+      imgAlt: "organDonation-img",
+    },
     { id: "mpm",
       projectName: "My Personal Manual",
       link: "https://mypersonalmanual.com/",
@@ -351,6 +360,7 @@ $(document).ready(function () {
     function () {
       var projectGif = {
         carrer: "./images/projects/carrer-gif.webp",
+        organDonation: "./images/projects/organDonation-gif.webp",
         mpm: "./images/projects/mpm-gif.webp",
         cropbid: "./images/projects/cropbid-gif.webp",
         mediafire: "./images/projects/mediafire-gif.webp",
@@ -366,6 +376,7 @@ $(document).ready(function () {
     function () {
       var projectImg = {
         carrer: "./images/projects/carrer-img.webp",
+        organDonation: "./images/projects/organDonation-img.webp",
         mpm: "./images/projects/mpm-img.webp",
         cropbid: "./images/projects/cropbid-img.webp",
         ecomm: "./images/projects/ecomm-img.webp",
