@@ -209,7 +209,7 @@
 .intro-title{font-size:3.7rem;display:flex}
 .intro-description{width:100%;margin-top:4%;font-size:.8rem}
 .profile-img{width:35%}
-.profile-img img{margin:0 0 -30% 30%}
+.profile-img>img{margin:0 0 -30% 30%}
 .projects-cointainer{width:80%}
 .project{margin:auto}
 .left-aligned{display:flex;flex-direction:column-reverse;border:2px solid rgba(0,0,0,.15);border-radius:1rem;padding:5%}
@@ -245,7 +245,7 @@
 .intro-title{font-size:3.7rem;display:flex}
 .intro-description{width:100%;margin-top:4%;font-size:.8rem}
 .profile-img{width:35%}
-.profile-img img{margin:0 0 -30% 30%}
+.profile-img>img{margin:0 0 -30% 30%}
 .projects-cointainer{width:80%}
 .project{margin:auto}
 h1{font-size:2rem}
@@ -289,7 +289,7 @@ h1{font-size:2rem}
 .intro-title{font-size:3rem;display:flex}
 .intro-description{width:100%;margin-top:4%;font-size:.8rem}
 .profile-img{width:55%}
-.profile-img img{margin:0 0 -30% 30%}
+.profile-img>img{margin:0 0 -30% 30%}
 .projects-cointainer{width:80%}
 .project{margin:auto}
 h1{font-size:2rem}

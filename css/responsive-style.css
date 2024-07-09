@@ -789,7 +789,7 @@
         width: 35%;
     }
 
-    .profile-img img{
+    .profile-img > img{
         margin: 0% 0% -30% 30%;
     }    
     .projects-cointainer{
@@ -940,7 +940,7 @@
         width: 35%;
     }
 
-    .profile-img img{
+    .profile-img > img{
         margin: 0% 0% -30% 30%;
     }    
     .projects-cointainer{
@@ -1156,7 +1156,7 @@
         width: 55%;
     }
 
-    .profile-img img{
+    .profile-img > img{
         margin: 0% 0% -30% 30%;
     }    
     .projects-cointainer{
