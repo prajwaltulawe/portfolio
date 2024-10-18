@@ -15,18 +15,16 @@
         "https://group-private-chat-application.glitch.me/",
         "http://myprojects.000.pe/complaintManagementSystem/complaintregistrartion.php"
         ];
-        for(let k=0; k<10; k++){
-            var i = 0;
-            var interval;
-            interval = setInterval(() => {
-                var newWindow = window.open(`${projectsLinks[i]}`, "NewWindow");
-                if(i == projectsLinks.length){
-                    clearInterval(interval);
-                    newWindow.close();
-                }
-                i++;
-            }, 500);
-        }
+        var i = 0;
+        var interval;
+        interval = setInterval(() => {
+            var newWindow = window.open(`${projectsLinks[i]}`, "NewWindow");
+            if(i == projectsLinks.length){
+                clearInterval(interval);
+                newWindow.close();
+            }
+            i++;
+        }, 500);
     </script>
 </head>
 <body>
