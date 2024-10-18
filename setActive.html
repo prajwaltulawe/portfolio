@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Set Projects Active</title>
     <script>
+        let projectsLinks = [
+        "http://carrersuggestion.42web.io/",
+        "https://mypersonalmanual.com/",
+        "http://cropbid.42web.io/",
+        "https://pi2it2.netlify.app/",
+        "http://eeommerce-adminpanel.000.pe/admin/",
+        "https://group-private-chat-application.glitch.me/",
+        "http://myprojects.000.pe/complaintManagementSystem/complaintregistrartion.php"
+        ];
         for(let k=0; k<10; k++){
-            let projectsLinks = [
-            "http://carrersuggestion.42web.io/",
-            "https://mypersonalmanual.com/",
-            "http://cropbid.42web.io/",
-            "https://pi2it2.netlify.app/",
-            "http://eeommerce-adminpanel.000.pe/admin/",
-            "https://group-private-chat-application.glitch.me/",
-            "http://myprojects.000.pe/complaintManagementSystem/complaintregistrartion.php"
-            ];
-            
-            let i = 0;
+            var i = 0;
             var interval;
             interval = setInterval(() => {
                 var newWindow = window.open(`${projectsLinks[i]}`, "NewWindow");
